@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Tags</title>
+    <!-- 
+        Some general rule of thumb
+            . (dot) are for CLASSES. There can me multiple classes
+            # (hash) are for IDs. There can only be one ID so go figure I guess.
+
+     -->
+
+    <!-- Internal CSS -->
+    <style>
+        img{
+            max-width: 100%;
+            max-height: 100%
+        }
+
+        .landscape{
+            height: 500px;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Headings -->
+    <div id="headings">
+        <h1>This is an H1 heading</h1>
+        <h2>This is an H2 heading</h2>
+        <h3>This is an H3 heading</h3>
+        <h4>This is an H4 heading</h4>
+
+    </div>
+    <hr>
+    <!-- Fonts -->
+    <div id="fonts">
+        <h2>Fonts</h2>
+        <b>This text is in bold</b>
+        <br>
+        <i>This text is in italics </i>
+        <br>
+        <sup>superscript</sup>
+        <sub>subscript</sub>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, blanditiis consectetur. Necessitatibus provident voluptatum voluptate molestiae ea officia. Assumenda voluptate officia veritatis quam a maxime aut! Beatae dicta mollitia ullam.</p>
+        <hr>
+        <!-- Strong and Emphasis -->
+        <h2>Strong and Emphasis</h2>
+        <p>Lorem, <strong>dolor sit amet consectetur adipisicing elit. Repellendus deserunt velit quae, eos rerum accusantium</strong>  vitae <em>fugit ab repellat iusto doloremque! Fugiat officiis necessitatibus ad, pariatur doloribus eos aliquid</em> harum?</p>
+        <hr>
+        <!-- Quotes -->
+        <h2>Quotes</h2>
+        <blockquote cite="https://marketplace.visualstudio.com/items?itemName=geddski.macros">
+            <p>This is a block quote. Look at me guys</p>
+        </blockquote>
+
+        <!-- Abbrevations -->
+        <p><abbr title="Presidente">President</abbr> Lorem ipsum dolor sit amet.</p>
+        <hr>
+
+        <!-- Content Changes -->
+        <h2>Content Changes</h2>
+        <h3>ins, del, s</h3>
+        <p>This <del>deletes</del> and this one shows that it's been <ins>inserted</ins></p>
+        <hr>
+        
+    </div>
+
+    <!-- Lists -->
+    <h2>Lists</h2>
+    <h3>Ordered and Unordered Lists</h3>
+    <p>Ordered lists &lt ol &gt give you a nice numbering format while &lt ul &gt still keeps the format just with no numbering  </p>
+    <div id="lists">
+        <table>
+            <tr>
+                <td> 
+                    <div id="orderedList">
+                        <ol>
+                            <li class="items1">step1</li>
+                            <li class="items2">step2</li>
+                            <li class="items3">step3</li>
+                            <li class="items4">step4</li>
+                            <li class="items5">step5</li>
+                        </ol>
+                    </div>
+                </td>
+               
+                <td>
+                    <div id="unorderedList">
+                        <ul>
+                            <li class="items1">ul1</li>
+                            <li class="items2">ul2</li>
+                            <li class="items3">ul3</li>
+                            <li class="items4">ul4</li>
+                            <li class="items5">ul5</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Definition lists -->
+        <h3>Definition Lists: dl dt dd</h3>
+        <p> <b>dl</b> is the list 
+            <br>
+            <b>dt</b> are for the itbs
+            <br>
+            <b>dd</b> contains the definitions for the list
+
+        </p>
+        <dl>
+            <dt>Pizza</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+            <dt>Burger</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur.</dd>
+            <dt>Fries</dt>
+                <dd>Lorem ipsum dolor sit.</dd>
+        </dl>
+
+        <hr>
+    </div>
+
+    <!-- Links -->
+    <div id="links">
+        <h3>Linking to other Sites</h3>
+        <p><b>a</b> does the linking</p>
+        <p>You can also use relative urls</p>
+        
+        <!-- urls-->
+        Using target ="_blank" creates a new window for the link
+        <ul>
+            <b>These link to other sites</b>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.amazon.com" target="_blank">Amazon</a></li>   
+        </ul>
+    
+        <!-- Linking to the same part of the page  -->
+       
+        <ul>
+            <b>These link to the same part of the page</b>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#fonts">Fonts</a></li>
+            <li><a href="#links">Links</a></li>
+
+        </ul>
+    </div>
+    <hr>
+
+    <!-- Images 
+            JPEG for images with lotsa colors
+            PNG for images with not so lotsa colors
+    -->
+    <div id="images">
+        <h2>Images</h2>
+        <div class="landscape">
+            Using internal css to contain the image
+            <img src="https://tinyurl.com/ybocsw7h" alt="Stock Photo">
+        </div>
+        <div>
+            Horrible scaling by setting the attributes
+            <br>
+            <img src="https://tinyurl.com/y7p4wnw8" alt="Yet Another Stock Photo"
+            height = "500" width = "500"align = "top">
+        </div>
+
+        <h3>Figure and Figure Caption</h3>
+        HTML5 was nice enough to have a figure tag to nicely group the picture and the caption without using the br tag
+        <figure>
+            <img src="https://tinyurl.com/yaejwmbn" alt="its yuge">
+                <figcap>This is a <b>figcaption</b> inside a <b>figure</b> tag</figcap>
+        </figure>
+    </div>
+    <hr>
+
+    <!-- Tables -->
+    <div id="tables">
+        <h2>Tables</h2>
+        <p>
+            <li><b>table</b> holds the table</li>
+            <li><b>tr</b> is the table row</li>
+            <li><b>td</b> is the table data</li>   
+            <li><b>th</b> is the table heading</li>   
+        </p>
+
+        <!-- regular boring table -->
+        <em>A regular uneventful table</em>
+        <table>
+            <tr>
+                <th></th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <th scope="row">Sold</th>
+                <td>10</td>
+                <td>20</td>
+                <td>30</td>
+                <td>40</td>
+                <td>60</td>
+                <td>70</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <th scope="row">Total</th>
+                <td>$234</td>
+                <td>$231</td>
+                <td>$675</td>
+                <td>$688</td>
+                <td>$123</td>
+                <td>$867</td>
+                <td>$9</td>
+            </tr>
+
+        </table>
+
+        <!-- Colspan Table   -->
+        <br>
+        <em>Colspan Table</em>
+        <table>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>12pm</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td colspan="2">Screeching</td>
+                <td>Sleeping</td>
+                <td>Eating</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">Doing nothing</td>
+                <td>idk</td>
+            </tr>
+        </table>
+
+        
+        <!-- Rowspan Table -->
+        <br>
+        <em>Rowspan table</em>
+        <table>
+            <tr>
+                <th></th>
+                <th>ABC</th>
+                <th>DEF</th>
+                <th>GHI</th>
+            </tr>
+            <tr>
+                <th>6pm - 7pm</th>
+                <td rowspan="2">Movies</td>
+                <td>Comedy</td>
+                <td>News</td>
+            </tr>
+            <tr>
+                <th>7pm - 8pm</th>
+                <td>Sport</td>
+                <td>News</td>
+            </tr>
+        </table>
+        
+        <!-- LOONG Tables -->
+        <p><br>For long tables use <b>thead</b> <b>tbody</b> and <b>tfoot</b> <br></p>
+
+        <!-- THIS ONE IS OLD dont use it -->
+        <table item-width="400" cellpadding = "10" cellspacing = "5" border="2">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Income</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>1 Jan</th>
+                    <td>243</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <th>2 Jan</th>
+                    <td>657</td>
+                    <td>345</td>
+                </tr>
+                <tr>
+                    <th>3 Jan</th>
+                    <td>876</td>
+                    <td>234</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <td></td>
+                <td>23423</td>
+                <td>42342</td>
+            </tfoot>
+        </table>
+
+    </div>
+    <br><hr>
+
+    <!-- Forms  -->
+    <h2>Forms</h2>
+    <p>Pretty much the in every web application. Has two <em>important</em> attributes <br>
+    <dl>
+        <dd><b>action</b></dd>
+            <dd>The page url that will receive the form</dd>
+        <dd><b>method</b></dd>
+            <dd>Either a <em>get</em> or a <em>post</em></dd>
+    </dl>
+    
+
+    
+</body>
+</html>
