@@ -1,7 +1,32 @@
+/* 
+    regular HTML elements
+*/
+
 h1 {
     color: floralwhite;
+    background-color: slategrey;
+    padding-bottom: 1 0px;
 }
-div {
+
+/* 
+    use (.) for classes and (#) for id's
+*/
+div#lorem1 {
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
+    padding: 5px
+}
+
+/* 
+    Cascading Style Sheets  - the latter will take precedence
+*/
+
+/* wildcard for EVERYTHING */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1#css_heading{
+    color: firebrick;
+    background-color: inherit;
 }
