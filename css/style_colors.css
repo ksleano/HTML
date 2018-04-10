@@ -1,0 +1,38 @@
+/* This CSS file covers the color stylings in the colors.html */
+
+/* REMEBER THE DIFFERENCE BETWEEN IDs AND CLASSES */
+/* Foreground color */
+
+p#heading_desc{
+    color: white;
+}
+
+p#content{
+    color: black;
+    background-color: whitesmoke
+}
+
+/* Background. Normally this would just fall in the same brackets but were learning here */
+
+body{
+    background-color: gray
+}
+
+div.heading_intro{
+    background-color: darkcyan
+}
+
+p#content{
+    background-color: whitesmoke
+}
+
+
+p#heading_desc{
+    background-color: brown;
+}
+
+/* Opacity */
+
+p#heading_desc{
+   opacity: 0.7;
+}
